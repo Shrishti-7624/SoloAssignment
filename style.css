@@ -1,0 +1,86 @@
+/* box sizing*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* default font family and line height for the body */
+body {
+    font-family: sans-serif; 
+    line-height: 1.5;
+    margin: 0; 
+    padding: 0;
+    color: #333; 
+}
+
+/* Define font sizes for headings */
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 1em; 
+}
+
+/* Define color palette using CSS variables */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --accent-color: #28a745;
+    --background-color: #f8f9fa;
+    --text-color: #333;
+    --link-color: #007bff;
+}
+
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Basic link styling */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* margins and padding using a spacing scale (example: multiples of 8px) */
+header,
+main,
+footer {
+    padding: 16px;
+    margin-bottom: 16px; 
+}
+
+/* Remove margin from the last element in a section */
+header > :last-child,
+main > :last-child,
+footer > :last-child {
+    margin-bottom: 0;
+}
